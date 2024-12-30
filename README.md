@@ -22,39 +22,10 @@ Developers can rely on this tool for a wide range of tasks, including automation
 2. Data Models
    - Leverages Pydantic for type-safe handling of file operations, including:
      • FileToCreate – describes files to be created or updated.
-    ### FileToCrete : json file
-{
-  "filename": "example.txt",
-  "content": "This is the file content."
-}
-     • FileToEdit – describes specific snippet replacements in an existing file.
-     ### FileToEdit : json file
-     {
-  "filename": "example.txt",
-  "replacements": [
-    {
-      "old_text": "original text",
-      "new_text": "updated text"
-    }
-  ]
-}
      • AssistantResponse – structures chat responses and potential file operations.
-     ### Assistantresponse : json file
-     {
-  "response": "Here’s the solution!",
-  "file_operations": [
-    { "type": "create", "details": { "filename": "new_file.py", "content": "print('Hello, World!')" } }
-  ]
-}
-
+     
 3. System Prompt
    - A comprehensive system prompt (system_PROMPT) guides conversation, ensuring all replies strictly adhere to JSON output with optional file creations or edits.
-     ### Example Prompt Usage : plaintext
-     Ensure all replies follow this format:
-{
-  "response": "Your answer here",
-  "file_operations": [ ... ]
-}
 
 4. Helper Functions
    - read_local_file: Reads a target filesystem path and returns its content as a string.  

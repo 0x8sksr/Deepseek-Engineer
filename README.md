@@ -20,9 +20,9 @@ Developers can rely on this tool for a wide range of tasks, including automation
    - Connects to the DeepSeek endpoint specified in the environment variable to stream GPT-like completions. 
 
 2. Data Models
-   - Leverages Pydantic for type-safe handling of file operations, including:
-     • FileToCreate – describes files to be created or updated.
-     • AssistantResponse – structures chat responses and potential file operations.
+   Leverages Pydantic for type-safe handling of file operations, including: • FileToCreate – describes files to be created or updated.
+• FileToEdit – describes specific snippet replacements in an existing file.
+• AssistantResponse – structures chat responses and potential file operations.
      
 3. System Prompt
    - A comprehensive system prompt (system_PROMPT) guides conversation, ensuring all replies strictly adhere to JSON output with optional file creations or edits.

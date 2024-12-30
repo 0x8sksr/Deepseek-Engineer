@@ -2,7 +2,16 @@
 
 ## Overview
 
-This repository contains a powerful coding assistant application that integrates with the DeepSeek API to process user conversations and generate structured JSON responses. Through an intuitive command-line interface, it can read local file contents, create new files, and apply diff edits to existing files in real time.
+This repository contains a powerful coding assistant application that integrates with the DeepSeek API to process user conversations and generate structured JSON responses.
+
+Through an intuitive command-line interface, it can:
+
+Read local file contents.
+Create new files effortlessly.
+Apply diff edits to existing files in real time, ensuring seamless updates.
+The application leverages advanced natural language processing to understand user inputs and provide contextually accurate outputs. It is built with scalability and modularity in mind, making it easy to extend its functionality.
+
+Developers can rely on this tool for a wide range of tasks, including automation, file management, and efficient coding workflows. Whether you're managing a single project or multiple repositories, this tool enhances productivity and simplifies complex operations.
 
 ## Key Features
 
